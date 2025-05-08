@@ -1,0 +1,2795 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/SkillOA/2025/3/KBII"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/SkillOA/2025/3/KBII">
+    <Prefix name="" IRI="http://www.semanticweb.org/SkillOA/2025/3/KBII/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="/class_Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/class_AtomicSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/class_CombinedSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/class_FieldDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/class_PositionParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/class_Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/class_ServiceRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/class_Skill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/class_SkillParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/class_TechnicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/class_ToleranceParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_canBeExecutedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_canBeRealizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_canFulfill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_containsSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_fulfillsServiceRequest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasFirstSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasGeometryRestrictions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasLastSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasMaterialProcessingRestriction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasMechanicalProcessingRestriction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasParallelSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasRequestedServiceFunctionalFeatureParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasRequestedServiceGeometryParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasRequestedServiceMaterialParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasRequestedServiceMechanicalParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasRequestedServiceParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasRequestedServiceToleranceParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasSubSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_hasTechnicalRestriction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_isExecutedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_isParallelSkillOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_isPartOfResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_isPartOfResourceModule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_isRealizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_isRealizedCapabilityBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_isRestrictedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_offersSkillFunctionalFeatureParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_offersSkillParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_offersSkillToleranceParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_providesAtomicSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_providesSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/op_resetsSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/willfulfill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dp_hasNodeID&amp;Value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/ProposedProperties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_changesMaterialFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_changesMaterialTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_changesPositionFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_changesPositionTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_endPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_firstSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasCapabilityProcessingTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasColor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasCompositionNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasDensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasDepth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasDiameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasElasticModulus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasFeatureType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasFitType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasFunctionalFeatureParameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasGeometricalParameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasHardness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasInitialValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMaterialProcessingParameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMaterialType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMaxHardness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMaxHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMaxLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMaxSurfaceFinish"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMaxTolerance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMaxWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMaxWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMechanicalParameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMinHardness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMinHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMinLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMinSurfaceFinish"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMinTolerance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMinWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasMinWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasOrientation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasParameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasPhysicalPortAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasPositionParameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasPositionRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasPositionX"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasPositionY"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasPositionZ"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasProcessingTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasProcessingTimeType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasRestriction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasServiceProcessingTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasShapeType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasSkillCombination"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasSkillModel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasSkillProcessingTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasStartPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasSurfaceArea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasSurfaceFinish"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasTemperatureSupply"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasTensileStrength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasThermalConductivity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasTolerance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasToleranceParameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasVolume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_hasWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isActor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isAtomicSkillType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isElectromechanicalDriveSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isExecutableParallelToAllSkills"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isFlowSensingSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isHydraulicDriveSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isLevelSensingSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isPneumaticDriveSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isPressureSensingSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isProximitySensingSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isSensor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_isTemperatureSensingSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_lastSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_restriction_Depth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_restriction_Material"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dp_restriction_ProcessingTime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/CSkill_PunchingProcess"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/FD_ContactSensor01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/FD_ContactSensor02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/FD_ConveyorBeltMotorActor01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/FD_LightBarrierSensor01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/FD_LightBarrierSensor02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/FD_PunchingMachineActor02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Parameter_Deepening"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Parameter_PositionA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Parameter_PunchingTolerance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltBackwardWithA01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Skill_MovePunchHeadDownWithA02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/TestParameter1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/TestSkill1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/TestSkill2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:Class"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/RM_ConveyorBelt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/RM_PunchingMachine"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="/class_Skill"/>
+        <ObjectUnionOf>
+            <Class IRI="/class_AtomicSkill"/>
+            <Class IRI="/class_CombinedSkill"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="/class_Actor"/>
+        <Class IRI="/class_FieldDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/class_AtomicSkill"/>
+        <Class IRI="/class_Skill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/class_CombinedSkill"/>
+        <Class IRI="/class_Skill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+        <Class IRI="/class_SkillParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/class_PositionParameter"/>
+        <Class IRI="/class_SkillParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/class_Sensor"/>
+        <Class IRI="/class_FieldDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/class_ToleranceParameter"/>
+        <Class IRI="/class_SkillParameter"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/class_AtomicSkill"/>
+        <Class IRI="/class_CombinedSkill"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="/class_FieldDevice"/>
+        <Class IRI="/class_Actor"/>
+        <Class IRI="/class_Sensor"/>
+    </DisjointUnion>
+    <ClassAssertion>
+        <Class IRI="/class_Skill"/>
+        <NamedIndividual IRI="/CSkill_PunchingProcess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_FieldDevice"/>
+        <NamedIndividual IRI="/FD_ContactSensor01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_FieldDevice"/>
+        <NamedIndividual IRI="/FD_ContactSensor02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_FieldDevice"/>
+        <NamedIndividual IRI="/FD_ConveyorBeltMotorActor01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_FieldDevice"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_FieldDevice"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_FieldDevice"/>
+        <NamedIndividual IRI="/FD_PunchingMachineActor02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_SkillParameter"/>
+        <NamedIndividual IRI="/Parameter_Deepening"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_SkillParameter"/>
+        <NamedIndividual IRI="/Parameter_PositionA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_SkillParameter"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_SkillParameter"/>
+        <NamedIndividual IRI="/Parameter_PunchingTolerance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_Skill"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltBackwardWithA01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_Skill"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_Skill"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadDownWithA02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_Skill"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_Skill"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_Skill"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_Skill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_Skill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_TechnicalProcess"/>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+        <NamedIndividual IRI="/TestParameter1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_SkillParameter"/>
+        <NamedIndividual IRI="/TestParameter1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_Skill"/>
+        <NamedIndividual IRI="/TestSkill1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/class_Skill"/>
+        <NamedIndividual IRI="/TestSkill2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasParallelSkill"/>
+        <NamedIndividual IRI="/CSkill_PunchingProcess"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasSubSkill"/>
+        <NamedIndividual IRI="/CSkill_PunchingProcess"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasSubSkill"/>
+        <NamedIndividual IRI="/CSkill_PunchingProcess"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasSubSkill"/>
+        <NamedIndividual IRI="/CSkill_PunchingProcess"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_isExecutedBy"/>
+        <NamedIndividual IRI="/CSkill_PunchingProcess"/>
+        <NamedIndividual IRI="/RM_PunchingMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <NamedIndividual IRI="/CSkill_PunchingProcess"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <NamedIndividual IRI="/CSkill_PunchingProcess"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillToleranceParameter"/>
+        <NamedIndividual IRI="/CSkill_PunchingProcess"/>
+        <NamedIndividual IRI="/Parameter_PunchingTolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_isPartOfResourceModule"/>
+        <NamedIndividual IRI="/FD_ContactSensor01"/>
+        <NamedIndividual IRI="/RM_PunchingMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_providesAtomicSkill"/>
+        <NamedIndividual IRI="/FD_ContactSensor01"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_isPartOfResourceModule"/>
+        <NamedIndividual IRI="/FD_ContactSensor02"/>
+        <NamedIndividual IRI="/RM_PunchingMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_providesAtomicSkill"/>
+        <NamedIndividual IRI="/FD_ContactSensor02"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_isPartOfResourceModule"/>
+        <NamedIndividual IRI="/FD_ConveyorBeltMotorActor01"/>
+        <NamedIndividual IRI="/RM_ConveyorBelt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_providesAtomicSkill"/>
+        <NamedIndividual IRI="/FD_ConveyorBeltMotorActor01"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_isPartOfResourceModule"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor01"/>
+        <NamedIndividual IRI="/RM_ConveyorBelt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_providesAtomicSkill"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor01"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_isPartOfResourceModule"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor02"/>
+        <NamedIndividual IRI="/RM_ConveyorBelt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_providesAtomicSkill"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor02"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_isPartOfResourceModule"/>
+        <NamedIndividual IRI="/FD_PunchingMachineActor02"/>
+        <NamedIndividual IRI="/RM_PunchingMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_providesAtomicSkill"/>
+        <NamedIndividual IRI="/FD_PunchingMachineActor02"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltBackwardWithA01"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltBackwardWithA01"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltBackwardWithA01"/>
+        <NamedIndividual IRI="/Parameter_PositionA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_resetsSkill"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltBackwardWithA01"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+        <NamedIndividual IRI="/Parameter_PositionA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_resetsSkill"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadDownWithA02"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillFunctionalFeatureParameter"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadDownWithA02"/>
+        <NamedIndividual IRI="/Parameter_Deepening"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadDownWithA02"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadDownWithA02"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_resetsSkill"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadDownWithA02"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_resetsSkill"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasParallelSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasParallelSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasParallelSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_resetsSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltBackwardWithA01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_resetsSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+        <NamedIndividual IRI="/Parameter_PositionA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+        <NamedIndividual IRI="/Parameter_PositionA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_resetsSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadDownWithA02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+        <NamedIndividual IRI="/TestSkill1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasParallelSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasParallelSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasParallelSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_resetsSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_containsSkill"/>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltBackwardWithA01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_containsSkill"/>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_containsSkill"/>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_containsSkill"/>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_containsSkill"/>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_containsSkill"/>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_containsSkill"/>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_containsSkill"/>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+        <NamedIndividual IRI="/TestSkill1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_containsSkill"/>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+        <NamedIndividual IRI="/TestSkill2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/TestSkill1"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/TestSkill1"/>
+        <NamedIndividual IRI="/TestSkill2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillFunctionalFeatureParameter"/>
+        <NamedIndividual IRI="/TestSkill1"/>
+        <NamedIndividual IRI="/Parameter_Deepening"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <NamedIndividual IRI="/TestSkill1"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <NamedIndividual IRI="/TestSkill1"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <NamedIndividual IRI="/TestSkill2"/>
+        <NamedIndividual IRI="/TestSkill1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillFunctionalFeatureParameter"/>
+        <NamedIndividual IRI="/TestSkill2"/>
+        <NamedIndividual IRI="/TestParameter1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <NamedIndividual IRI="/TestSkill2"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <NamedIndividual IRI="/TestSkill2"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasInitialValue"/>
+        <NamedIndividual IRI="/FD_ContactSensor01"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasPhysicalPortAddress"/>
+        <NamedIndividual IRI="/FD_ContactSensor01"/>
+        <Literal>xDI%1.0_A1_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isSensor"/>
+        <NamedIndividual IRI="/FD_ContactSensor01"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasInitialValue"/>
+        <NamedIndividual IRI="/FD_ContactSensor02"/>
+        <Literal>false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasPhysicalPortAddress"/>
+        <NamedIndividual IRI="/FD_ContactSensor02"/>
+        <Literal>xDI%1.1_A1_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isSensor"/>
+        <NamedIndividual IRI="/FD_ContactSensor02"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasInitialValue"/>
+        <NamedIndividual IRI="/FD_ConveyorBeltMotorActor01"/>
+        <Literal>false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasPhysicalPortAddress"/>
+        <NamedIndividual IRI="/FD_ConveyorBeltMotorActor01"/>
+        <Literal>xDO%2.0_A1_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isActor"/>
+        <NamedIndividual IRI="/FD_ConveyorBeltMotorActor01"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasInitialValue"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor01"/>
+        <Literal>false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasPhysicalPortAddress"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor01"/>
+        <Literal>xDI%1.2_A1_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isSensor"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor01"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasInitialValue"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor02"/>
+        <Literal>false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasPhysicalPortAddress"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor02"/>
+        <Literal>xDI%1.3_A1_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isSensor"/>
+        <NamedIndividual IRI="/FD_LightBarrierSensor02"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasInitialValue"/>
+        <NamedIndividual IRI="/FD_PunchingMachineActor02"/>
+        <Literal>false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasPhysicalPortAddress"/>
+        <NamedIndividual IRI="/FD_PunchingMachineActor02"/>
+        <Literal>xDO%2.1_A1_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isActor"/>
+        <NamedIndividual IRI="/FD_PunchingMachineActor02"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasFeatureType"/>
+        <NamedIndividual IRI="/Parameter_Deepening"/>
+        <Literal>Stamp1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasPositionRange"/>
+        <NamedIndividual IRI="/Parameter_PositionA"/>
+        <Literal>[1;0;0]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasPositionRange"/>
+        <NamedIndividual IRI="/Parameter_PositionB"/>
+        <Literal>[3;0;0]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasMaxTolerance"/>
+        <NamedIndividual IRI="/Parameter_PunchingTolerance"/>
+        <Literal>0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasMinTolerance"/>
+        <NamedIndividual IRI="/Parameter_PunchingTolerance"/>
+        <Literal>0.05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isElectromechanicalDriveSkill"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltBackwardWithA01"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isElectromechanicalDriveSkill"/>
+        <NamedIndividual IRI="/Skill_MoveConveyorBeltForwardWithA01"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isElectromechanicalDriveSkill"/>
+        <NamedIndividual IRI="/Skill_MovePunchHeadUpWithA02"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isPressureSensingSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS01"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isPressureSensingSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithCS02"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_firstSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isProximitySensingSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_lastSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS01"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isProximitySensingSkill"/>
+        <NamedIndividual IRI="/Skill_SenseWithLBS02"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasSkillCombination"/>
+        <NamedIndividual IRI="/TechnicalProcess1ToFulfillTestServiceRequest1"/>
+        <Literal>[
+  {
+    &quot;skill&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_SenseWithLBS01&quot;,
+    &quot;parameters&quot;: [
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterIn&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionA&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[1;0;0]&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterOut&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionA&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[1;0;0]&quot;
+      }
+    ],
+    &quot;hasParallelSkill&quot;: [],
+    &quot;position_in_Capability&quot;: 1
+  },
+  {
+    &quot;skill&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_MoveConveyorBeltForwardWithA01&quot;,
+    &quot;parameters&quot;: [
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterIn&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionA&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[1;0;0]&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterOut&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      }
+    ],
+    &quot;hasParallelSkill&quot;: [],
+    &quot;position_in_Capability&quot;: 2
+  },
+  {
+    &quot;skill&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_SenseWithLBS02&quot;,
+    &quot;parameters&quot;: [
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterIn&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterOut&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      }
+    ],
+    &quot;hasParallelSkill&quot;: [
+      &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_MovePunchHeadUpWithA02&quot;,
+      &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_SenseWithCS01&quot;,
+      &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_SenseWithCS02&quot;
+    ],
+    &quot;position_in_Capability&quot;: 3
+  },
+  {
+    &quot;skill&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/TestSkill1&quot;,
+    &quot;parameters&quot;: [
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillFunctionalFeatureParameter&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_Deepening&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasFeatureType&quot;,
+        &quot;datavalue&quot;: &quot;Stamp1&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterIn&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterOut&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      }
+    ],
+    &quot;hasParallelSkill&quot;: [],
+    &quot;position_in_Capability&quot;: 4
+  },
+  {
+    &quot;skill&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/TestSkill2&quot;,
+    &quot;parameters&quot;: [
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillFunctionalFeatureParameter&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/TestParameter1&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasFeatureType&quot;,
+        &quot;datavalue&quot;: &quot;TestType1&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterIn&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterOut&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      }
+    ],
+    &quot;hasParallelSkill&quot;: &quot;ParallelToAllSkills&quot;,
+    &quot;position_in_Capability&quot;: 5
+  },
+  {
+    &quot;skill&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/TestSkill1&quot;,
+    &quot;parameters&quot;: [
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillFunctionalFeatureParameter&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_Deepening&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasFeatureType&quot;,
+        &quot;datavalue&quot;: &quot;Stamp1&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterIn&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterOut&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      }
+    ],
+    &quot;hasParallelSkill&quot;: [],
+    &quot;position_in_Capability&quot;: 6
+  },
+  {
+    &quot;skill&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_SenseWithCS01&quot;,
+    &quot;parameters&quot;: [
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterIn&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterOut&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      }
+    ],
+    &quot;hasParallelSkill&quot;: [
+      &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_MoveConveyorBeltForwardWithA01&quot;,
+      &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_SenseWithLBS01&quot;,
+      &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_SenseWithLBS02&quot;
+    ],
+    &quot;position_in_Capability&quot;: 7
+  },
+  {
+    &quot;skill&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_MovePunchHeadUpWithA02&quot;,
+    &quot;parameters&quot;: [
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterIn&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterOut&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      }
+    ],
+    &quot;hasParallelSkill&quot;: [],
+    &quot;position_in_Capability&quot;: 8
+  },
+  {
+    &quot;skill&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_SenseWithCS02&quot;,
+    &quot;parameters&quot;: [
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterIn&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterOut&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      }
+    ],
+    &quot;hasParallelSkill&quot;: [],
+    &quot;position_in_Capability&quot;: 9
+  },
+  {
+    &quot;skill&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_MoveConveyorBeltBackwardWithA01&quot;,
+    &quot;parameters&quot;: [
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterIn&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionB&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[3;0;0]&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterOut&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionA&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[1;0;0]&quot;
+      }
+    ],
+    &quot;hasParallelSkill&quot;: [],
+    &quot;position_in_Capability&quot;: 10
+  },
+  {
+    &quot;skill&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Skill_SenseWithLBS01&quot;,
+    &quot;parameters&quot;: [
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterIn&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionA&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[1;0;0]&quot;
+      },
+      {
+        &quot;position_in_Capability&quot;: null,
+        &quot;property&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/op_offersSkillPositionParameterOut&quot;,
+        &quot;ParamIndiv&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/Parameter_PositionA&quot;,
+        &quot;dataProp&quot;: &quot;http://www.semanticweb.org/SkillOA/2025/3/KBI/dp_hasPositionRange&quot;,
+        &quot;datavalue&quot;: &quot;[1;0;0]&quot;
+      }
+    ],
+    &quot;hasParallelSkill&quot;: [],
+    &quot;position_in_Capability&quot;: 11
+  }
+]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_hasFeatureType"/>
+        <NamedIndividual IRI="/TestParameter1"/>
+        <Literal>TestType1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dp_isExecutableParallelToAllSkills"/>
+        <NamedIndividual IRI="/TestSkill2"/>
+        <Literal>true</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_hasGeometryRestrictions"/>
+        <ObjectProperty IRI="/op_hasTechnicalRestriction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_hasMaterialProcessingRestriction"/>
+        <ObjectProperty IRI="/op_hasTechnicalRestriction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_hasMechanicalProcessingRestriction"/>
+        <ObjectProperty IRI="/op_hasTechnicalRestriction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_hasRequestedServiceFunctionalFeatureParameter"/>
+        <ObjectProperty IRI="/op_hasRequestedServiceParameter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_hasRequestedServiceGeometryParameter"/>
+        <ObjectProperty IRI="/op_hasRequestedServiceParameter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_hasRequestedServiceMaterialParameter"/>
+        <ObjectProperty IRI="/op_hasRequestedServiceParameter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_hasRequestedServiceMechanicalParameter"/>
+        <ObjectProperty IRI="/op_hasRequestedServiceParameter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_hasRequestedServiceToleranceParameter"/>
+        <ObjectProperty IRI="/op_hasRequestedServiceParameter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_offersSkillFunctionalFeatureParameter"/>
+        <ObjectProperty IRI="/op_offersSkillParameter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <ObjectProperty IRI="/op_offersSkillParameter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <ObjectProperty IRI="/op_offersSkillParameter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/op_offersSkillToleranceParameter"/>
+        <ObjectProperty IRI="/op_offersSkillParameter"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/op_hasParallelSkill"/>
+        <ObjectProperty IRI="/op_isParallelSkillOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/op_hasFirstSkill"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/op_hasLastSkill"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_canBeExecutedBy"/>
+        <Class IRI="/class_TechnicalProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_canBeRealizedBy"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_hasParallelSkill"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_hasRequestedServiceFunctionalFeatureParameter"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_hasRequestedServiceGeometryParameter"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_hasRequestedServiceMaterialParameter"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_hasRequestedServiceMechanicalParameter"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_hasRequestedServiceParameter"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_hasRequestedServiceToleranceParameter"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_hasSubSkill"/>
+        <Class IRI="/class_CombinedSkill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_isExecutedBy"/>
+        <Class IRI="/class_CombinedSkill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_isParallelSkillOf"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_isPartOfResourceModule"/>
+        <Class IRI="/class_FieldDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_offersSkillFunctionalFeatureParameter"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_offersSkillParameter"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_offersSkillToleranceParameter"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_providesAtomicSkill"/>
+        <Class IRI="/class_FieldDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/op_resetsSkill"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_canBeRealizedBy"/>
+        <Class IRI="/class_TechnicalProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_fulfillsServiceRequest"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_hasFirstSkill"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_hasLastSkill"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_hasNextSkill"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_hasParallelSkill"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_hasRequestedServiceFunctionalFeatureParameter"/>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_hasRequestedServiceToleranceParameter"/>
+        <Class IRI="/class_ToleranceParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_hasSkill"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_hasSubSkill"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_isParallelSkillOf"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_isRealizedBy"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_isRealizedCapabilityBy"/>
+        <Class IRI="/class_TechnicalProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_offersSkillFunctionalFeatureParameter"/>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_offersSkillParameter"/>
+        <Class IRI="/class_SkillParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterIn"/>
+        <Class IRI="/class_PositionParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_offersSkillPositionParameterOut"/>
+        <Class IRI="/class_PositionParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_offersSkillToleranceParameter"/>
+        <Class IRI="/class_ToleranceParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_providesAtomicSkill"/>
+        <Class IRI="/class_AtomicSkill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_providesSkill"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/op_resetsSkill"/>
+        <Class IRI="/class_Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/willfulfill"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dp_hasNodeID&amp;Value"/>
+        <DataProperty IRI="/ProposedProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_changesMaterialFrom"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_changesMaterialTo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_changesPositionFrom"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_changesPositionTo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasCapabilityProcessingTime"/>
+        <DataProperty IRI="/dp_hasProcessingTime"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasColor"/>
+        <DataProperty IRI="/dp_hasMaterialProcessingParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasDensity"/>
+        <DataProperty IRI="/dp_hasMechanicalParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasDepth"/>
+        <DataProperty IRI="/dp_hasFunctionalFeatureParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasDiameter"/>
+        <DataProperty IRI="/dp_hasFunctionalFeatureParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasElasticModulus"/>
+        <DataProperty IRI="/dp_hasMechanicalParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasFeatureType"/>
+        <DataProperty IRI="/dp_hasFunctionalFeatureParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasFitType"/>
+        <DataProperty IRI="/dp_hasToleranceParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasFunctionalFeatureParameter"/>
+        <DataProperty IRI="/dp_hasParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasGeometricalParameter"/>
+        <DataProperty IRI="/dp_hasRestriction"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasHardness"/>
+        <DataProperty IRI="/dp_hasMechanicalParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasHeight"/>
+        <DataProperty IRI="/dp_hasGeometricalParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasLength"/>
+        <DataProperty IRI="/dp_hasGeometricalParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMass"/>
+        <DataProperty IRI="/dp_hasMechanicalParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMaterialProcessingParameter"/>
+        <DataProperty IRI="/dp_hasRestriction"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMaterialType"/>
+        <DataProperty IRI="/dp_hasMaterialProcessingParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMaxHardness"/>
+        <DataProperty IRI="/dp_hasHardness"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMaxHeight"/>
+        <DataProperty IRI="/dp_hasHeight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMaxLength"/>
+        <DataProperty IRI="/dp_hasLength"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMaxSurfaceFinish"/>
+        <DataProperty IRI="/dp_hasSurfaceFinish"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMaxTolerance"/>
+        <DataProperty IRI="/dp_hasTolerance"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMaxWeight"/>
+        <DataProperty IRI="/dp_hasWeight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMaxWidth"/>
+        <DataProperty IRI="/dp_hasWidth"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMechanicalParameter"/>
+        <DataProperty IRI="/dp_hasRestriction"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMinHardness"/>
+        <DataProperty IRI="/dp_hasHardness"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMinHeight"/>
+        <DataProperty IRI="/dp_hasHeight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMinLength"/>
+        <DataProperty IRI="/dp_hasLength"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMinSurfaceFinish"/>
+        <DataProperty IRI="/dp_hasSurfaceFinish"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMinTolerance"/>
+        <DataProperty IRI="/dp_hasTolerance"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMinWeight"/>
+        <DataProperty IRI="/dp_hasWeight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasMinWidth"/>
+        <DataProperty IRI="/dp_hasWidth"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasOrientation"/>
+        <DataProperty IRI="/dp_hasFunctionalFeatureParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasPositionParameter"/>
+        <DataProperty IRI="/dp_hasParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasPositionRange"/>
+        <DataProperty IRI="/dp_hasPositionParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasPositionX"/>
+        <DataProperty IRI="/dp_hasFunctionalFeatureParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasPositionY"/>
+        <DataProperty IRI="/dp_hasFunctionalFeatureParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasPositionZ"/>
+        <DataProperty IRI="/dp_hasFunctionalFeatureParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasServiceProcessingTime"/>
+        <DataProperty IRI="/dp_hasProcessingTime"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasShapeType"/>
+        <DataProperty IRI="/dp_hasGeometricalParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasSkillProcessingTime"/>
+        <DataProperty IRI="/dp_hasProcessingTime"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasSurfaceArea"/>
+        <DataProperty IRI="/dp_hasGeometricalParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasSurfaceArea"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasSurfaceFinish"/>
+        <DataProperty IRI="/dp_hasToleranceParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasTemperatureSupply"/>
+        <DataProperty IRI="/dp_hasMaterialProcessingParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasTensileStrength"/>
+        <DataProperty IRI="/dp_hasMechanicalParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasThermalConductivity"/>
+        <DataProperty IRI="/dp_hasMaterialProcessingParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasTolerance"/>
+        <DataProperty IRI="/dp_hasToleranceParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasToleranceParameter"/>
+        <DataProperty IRI="/dp_hasParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasVolume"/>
+        <DataProperty IRI="/dp_hasGeometricalParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasVolume"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasWeight"/>
+        <DataProperty IRI="/dp_hasMaterialProcessingParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasWidth"/>
+        <DataProperty IRI="/dp_hasGeometricalParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_hasWidth"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_isElectromechanicalDriveSkill"/>
+        <DataProperty IRI="/dp_isAtomicSkillType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_isFlowSensingSkill"/>
+        <DataProperty IRI="/dp_isAtomicSkillType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_isHydraulicDriveSkill"/>
+        <DataProperty IRI="/dp_isAtomicSkillType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_isLevelSensingSkill"/>
+        <DataProperty IRI="/dp_isAtomicSkillType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_isPneumaticDriveSkill"/>
+        <DataProperty IRI="/dp_isAtomicSkillType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_isPressureSensingSkill"/>
+        <DataProperty IRI="/dp_isAtomicSkillType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_isProximitySensingSkill"/>
+        <DataProperty IRI="/dp_isAtomicSkillType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/dp_isTemperatureSensingSkill"/>
+        <DataProperty IRI="/dp_isAtomicSkillType"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dp_hasNodeID&amp;Value"/>
+        <Class IRI="/class_Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_changesMaterialFrom"/>
+        <Class IRI="/class_Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_changesMaterialTo"/>
+        <Class IRI="/class_Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_changesPositionFrom"/>
+        <Class IRI="/class_Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_changesPositionTo"/>
+        <Class IRI="/class_Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_endPoint"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_firstSkill"/>
+        <Class IRI="/class_Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasDepth"/>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasDiameter"/>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasFeatureType"/>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasFitType"/>
+        <Class IRI="/class_ToleranceParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasFunctionalFeatureParameter"/>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasInitialValue"/>
+        <Class IRI="/class_FieldDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasMaxSurfaceFinish"/>
+        <Class IRI="/class_ToleranceParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasMaxTolerance"/>
+        <Class IRI="/class_ToleranceParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasMinSurfaceFinish"/>
+        <Class IRI="/class_ToleranceParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasMinTolerance"/>
+        <Class IRI="/class_ToleranceParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasOrientation"/>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasParameter"/>
+        <Class IRI="/class_SkillParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasPhysicalPortAddress"/>
+        <Class IRI="/class_FieldDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasPositionParameter"/>
+        <Class IRI="/class_PositionParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasPositionRange"/>
+        <Class IRI="/class_PositionParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasPositionX"/>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasPositionY"/>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasPositionZ"/>
+        <Class IRI="/class_FunctionalFeatureParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasProcessingTimeType"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasServiceProcessingTime"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasSkillCombination"/>
+        <Class IRI="/class_TechnicalProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasSkillProcessingTime"/>
+        <Class IRI="/class_Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasStartPoint"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasSurfaceFinish"/>
+        <Class IRI="/class_ToleranceParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasTolerance"/>
+        <Class IRI="/class_ToleranceParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_hasToleranceParameter"/>
+        <Class IRI="/class_ToleranceParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isActor"/>
+        <Class IRI="/class_Actor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isAtomicSkillType"/>
+        <Class IRI="/class_AtomicSkill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isElectromechanicalDriveSkill"/>
+        <Class IRI="/class_AtomicSkill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isExecutableParallelToAllSkills"/>
+        <Class IRI="/class_Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isFlowSensingSkill"/>
+        <Class IRI="/class_AtomicSkill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isHydraulicDriveSkill"/>
+        <Class IRI="/class_AtomicSkill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isLevelSensingSkill"/>
+        <Class IRI="/class_AtomicSkill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isPneumaticDriveSkill"/>
+        <Class IRI="/class_AtomicSkill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isPressureSensingSkill"/>
+        <Class IRI="/class_AtomicSkill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isProximitySensingSkill"/>
+        <Class IRI="/class_AtomicSkill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isSensor"/>
+        <Class IRI="/class_Sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_isTemperatureSensingSkill"/>
+        <Class IRI="/class_AtomicSkill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_lastSkill"/>
+        <Class IRI="/class_Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_restriction_Depth"/>
+        <Class IRI="/class_Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_restriction_Material"/>
+        <Class IRI="/class_ServiceRequest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dp_restriction_ProcessingTime"/>
+        <Class IRI="/class_Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#dp_hasNodeID&amp;Value"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_changesMaterialFrom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_changesMaterialTo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_changesPositionFrom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_changesPositionTo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_endPoint"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_firstSkill"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasCapabilityProcessingTime"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasColor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasCompositionNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasDensity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasDepth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasDiameter"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasElasticModulus"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasFeatureType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasFitType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasHardness"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasHeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasInitialValue"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMass"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMaterialType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMaxHardness"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMaxHeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMaxLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMaxSurfaceFinish"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMaxTolerance"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMaxWeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMaxWidth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMinHardness"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMinHeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMinLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMinSurfaceFinish"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMinTolerance"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMinWeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasMinWidth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasOrientation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasPhysicalPortAddress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasPositionRange"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasPositionX"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasPositionY"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasPositionZ"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasProcessingTime"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasProcessingTimeType"/>
+        <DataOneOf>
+            <Literal>exactly</Literal>
+            <Literal>max</Literal>
+            <Literal>min</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasServiceProcessingTime"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasShapeType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasSkillModel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasSkillProcessingTime"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasStartPoint"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasSurfaceArea"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasSurfaceFinish"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasTemperatureSupply"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasTensileStrength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasThermalConductivity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasTolerance"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasVolume"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasWeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_hasWidth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isActor"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isAtomicSkillType"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isElectromechanicalDriveSkill"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isExecutableParallelToAllSkills"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isFlowSensingSkill"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isHydraulicDriveSkill"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isLevelSensingSkill"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isPneumaticDriveSkill"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isPressureSensingSkill"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isProximitySensingSkill"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isSensor"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_isTemperatureSensingSkill"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_lastSkill"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_restriction_Depth"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_restriction_Material"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dp_restriction_ProcessingTime"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dp_hasNodeID&amp;Value</IRI>
+        <Literal>z.B. 
+Set (ns=174,i=3) True 3s
+Read (ns=175,i=3) False 3s
+
+resets_Skill kann hier durch Reasoning z.B. Node-Werte auf 0 stellen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Skill_MoveConveyorBeltBackwardWithA01</IRI>
+        <Literal>Conveyorbelt backwards from B to A.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Skill_MoveConveyorBeltForwardWithA01</IRI>
+        <Literal>Move From A to B. Necessary because a deadlock could occur otherwise.
+
+Veränderung:
+Ich hier Skill_MovePunchHeadWithA02 als nächsten Skill entfernt. Er ist bei Skill_SenseWithLB02 als nächster Skill hinterlegt, welcher der nächste Skill von diesem ist.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Skill_MovePunchHeadDownWithA02</IRI>
+        <Literal>Veränderung in Up und Down. Sonst ewiger Selbstaufruf. Es wird zudem angenommen, dass CS02 oben detektiert und CS01 bei unter Position der Stanze detektiert. Der Ablauf ist dann:
+
+1. Stanze herunterfahren
+2. Detektieren mit CS01
+3. Stanze hochfahren
+4. Detektieren mit CS02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Skill_MovePunchHeadUpWithA02</IRI>
+        <Literal>Veränderung in Up und Down. Sonst ewiger Selbstaufruf. Es wird zudem angenommen, dass CS02 oben detektiert und CS01 bei unter Position der Stanze detektiert. Der Ablauf ist dann:
+
+1. Stanze herunterfahren
+2. Detektieren mit CS01
+3. Stanze hochfahren
+4. Detektieren mit CS02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Skill_SenseWithCS02</IRI>
+        <Literal>nextSkill ist Conveyor Belt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/class_FunctionalFeatureParameter</IRI>
+        <Literal>Spezielle Konstruktionsmerkmale wie Bohrungen, Gewinde, Kerben etc. die dem Werkstück durch einen Skill zugeführt werden können: Hole, Slot, Thread, Chamfer, Fillet etc.
+
+Jedes Feature könnte als Beispiel; hasDiameter, hasDepth, hasPosition, hasOrientation haben.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/class_PositionParameter</IRI>
+        <Literal>Definiert die vom Skill erreichbaren Punkte anhand von Matrizen um Vektorraum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/class_SkillParameter</IRI>
+        <Literal>Individuals of Class Parameter shall be named after the Skill they belong to. E.g. If the Skill Individual called &quot;welding&quot; then the Individual in Class class_PositionParameter shall be called &quot;weldingPositionParameter&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/class_SkillParameter</IRI>
+        <Literal>Schweißen aus Sicht des Skills, nur für Skills, um Position bei In und Out eines Skills zu beschreiben</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/class_TechnicalProcess</IRI>
+        <Literal>Bei fehlender Capability, fehlende Capability feststellen und in Klasse herein.
+- Service-Anfrage kommt herein und dann schauen, ob es was gibt. Mechanismus, der Instant kommt mit &quot;Kann ich nicht&quot;, Klasse fehlende Capability:
+        -1. Überprüfung vergangener langzeitgespeicherter TechnicalProcess (=Skillset,       was als Capability vorgeschlagen und angenommen wurde, nur dass variable Daten einen Frame haben)
+      2. Falls nicht existent, neue Berechnung</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/class_ToleranceParameter</IRI>
+        <Literal>Wichtig für Fertigung und Montage, welche Tolleranzen vom Skill angeboten werden können:
+
+hasTolerance (DataProperty)
+
+hasFitType (z. B. H7/g6) (DataProperty)
+
+hasSurfaceFinish (DataProperty)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_changesMaterialFrom</IRI>
+        <Literal>obsolete? Already in dp_MaterialParameter. Change from x to y is mapped by the Object property op_hasSkillParameterIn and op_hasSkillParameterOut</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_changesMaterialTo</IRI>
+        <Literal>Materialveränderung als einzelne Klasse oder als Dataproperties mit bestimmter Range?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_changesMaterialTo</IRI>
+        <Literal>obsolete? Already in dp_MaterialParameter. Change from x to y is mapped by the Object property op_hasSkillParameterIn and op_hasSkillParameterOut</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_changesPositionFrom</IRI>
+        <Literal>Arrays werden nicht unterstützt, hier steht eine Position als 3x1-Matrix. (3D) bzw. der erreichbare Vektorraum durch einen Skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_changesPositionFrom</IRI>
+        <Literal>obsolete? Already in dp_PositionParameter.Change from x to y is mapped by the Object property op_hasSkillParameterIn and op_hasSkillParameterOut</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_changesPositionTo</IRI>
+        <Literal>obsolete? Already in dp_PositionParameter. Change from x to y is mapped by the Object property op_hasSkillParameterIn and op_hasSkillParameterOut</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_endPoint</IRI>
+        <Literal>start und Endpoint vom Service werden berechnet
+- Jetzt als gegeben annehmen, berechnen lassen später</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasColor</IRI>
+        <Literal>Defines the color of the workpiece (e.g., hex code or name).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasCompositionNumber</IRI>
+        <Literal>ist SkillID+Nummer in Queue für Capability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasDensity</IRI>
+        <Literal>Defines the density of the workpiece material in g/cm³.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasDepth</IRI>
+        <Literal>Defines the depth of a functional feature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasDiameter</IRI>
+        <Literal>Defines the diameter of a functional feature like a hole or slot.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasElasticModulus</IRI>
+        <Literal>Defines the elastic modulus (Young&apos;s modulus) in GPa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasFeatureType</IRI>
+        <Literal>Defines the type of feature (e.g., Hole, Slot, Thread).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasFitType</IRI>
+        <Literal>Defines the fit class (e.g., H7/g6) of the part.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasFunctionalFeatureParameter</IRI>
+        <Literal>Superproperty for functional feature Parameter such as diameter, depth, position and orientation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasGeometricalParameter</IRI>
+        <Literal>Superproperty for all geometrical properties like length, width, height, volume, surface area and shape type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasHardness</IRI>
+        <Literal>Defines the hardness value of the workpiece material (e.g., Brinell, Vickers).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasHeight</IRI>
+        <Literal>Defines the height of the workpiece in millimeters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasLength</IRI>
+        <Literal>Defines the length of the workpiece in millimeters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasMass</IRI>
+        <Literal>Defines the mass of the workpiece in kilograms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasMaterialProcessingParameter</IRI>
+        <Literal>Superproperty for all material-specific Parameter like color, transparency, thermal conductivity and melting point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasMechanicalParameter</IRI>
+        <Literal>Superproperty for all mechanical properties like mass, density, hardness, elastic modulus and tensile strength.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasOrientation</IRI>
+        <Literal>Defines the orientation of the feature (e.g., vertical, horizontal).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasPositionRange</IRI>
+        <Literal>Stores matrices of positions and possible vector spaces that can be reached by Skill or shall be reached by Skill from ServiceRequest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasPositionX</IRI>
+        <Literal>Defines the X-position of the feature in millimeters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasPositionY</IRI>
+        <Literal>Defines the Y-position of the feature in millimeters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasShapeType</IRI>
+        <Literal>Describes the shape of the workpiece, e.g., Cylinder, Cube, CustomShape.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasSurfaceArea</IRI>
+        <Literal>Defines the surface area of the workpiece in square millimeters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasSurfaceFinish</IRI>
+        <Literal>Defines the surface roughness or finish (e.g., Ra 0.8 µm).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasTemperatureSupply</IRI>
+        <Literal>Defines the melting point of the material in degrees Celsius.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasTensileStrength</IRI>
+        <Literal>Defines the tensile strength in MPa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasThermalConductivity</IRI>
+        <Literal>Defines the thermal conductivity in W/m·K.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasTolerance</IRI>
+        <Literal>Defines the dimensional tolerance in millimeters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasToleranceParameter</IRI>
+        <Literal>Superproperty for tolerances, surface finish and fit type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasVolume</IRI>
+        <Literal>Defines the volume of the workpiece in cubic millimeters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_hasWidth</IRI>
+        <Literal>Defines the width of the workpiece in millimeters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dp_isExecutableParallelToAllSkills</IRI>
+        <Literal>Wenn ein Skill parallel zu allen ausführbar ist, erhält er hier ein true.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_hasGeometryRestrictions</IRI>
+        <Literal>Relates a skill to its associated geometrical Parameter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_hasMaterialProcessingRestriction</IRI>
+        <Literal>Relates a skill to its associated material processing parameter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_hasMechanicalProcessingRestriction</IRI>
+        <Literal>Relates a skill to its associated mechanical Parameter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_hasRequestedServiceFunctionalFeatureParameter</IRI>
+        <Literal>Relates a Service to its associated functional feature Parameter (e.g., holes, threads, slots).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_hasRequestedServiceGeometryParameter</IRI>
+        <Literal>Relates a Service to its associated geometrical Parameter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_hasRequestedServiceMaterialParameter</IRI>
+        <Literal>Relates a Service to its associated material Parameter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_hasRequestedServiceMechanicalParameter</IRI>
+        <Literal>Relates a Service to its associated mechanical Parameter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_hasRequestedServiceToleranceParameter</IRI>
+        <Literal>Relates a Service to its associated tolerance Parameter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_isRealizedBy</IRI>
+        <Literal>Schauen, ob Unterschied zu hasSkill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_offersSkillFunctionalFeatureParameter</IRI>
+        <Literal>Relates a skill to its associated functional feature Parameter (e.g., holes, threads, slots).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_offersSkillParameter</IRI>
+        <Literal>Is devided into SkillParameterIn and SkillParameterOut to reflect changes in Parameter due to manufacturing or transportation processes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/op_offersSkillToleranceParameter</IRI>
+        <Literal>Relates a skill to its associated tolerance Parameter.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
